@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Chai Wala</title>
+    <style>
+        /* General Body and Font Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+        h1, h2, p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Header Section Styling */
+        header {
+            background-color: #ff704d;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 25px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ff704d;
+            color: black;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 1.1em;
+            color: #555;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        /* Hover Effects on Menu Items */
+        ul li:hover {
+            color: #ff704d;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Gallery Styling with Grid */
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        #gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        #gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            nav a {
+                padding: 12px 18px;
+            }
+            section h2 {
+                font-size: 2em;
+            }
+            #gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2em;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+            section h2 {
+                font-size: 1.8em;
+            }
+            #gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Mr. Chai Wala</h1>
+        <p>Where Chai Meets Passion</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#instagram">Instagram</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Welcome to Mr. Chai Wala!</h2>
+        <p>Enjoy the finest chai and snacks in town. Come for the chai, stay for the experience!</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li>Classic Chai - ₹30</li>
+            <li>Masala Chai - ₹40</li>
+            <li>Cold Coffee - ₹60</li>
+            <li>Veg Sandwich - ₹50</li>
+        </ul>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <h2>Our Location</h2>
+        <p>Behind Punjab National Bank, Station Road, Konch</p>
+    </section>
+
+    <!-- Gallery Section with Image Hover Effects -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div>
+            <img src="https://via.placeholder.com/300" alt="Chai" />
+            <img src="https://via.placeholder.com/300" alt="Café" />
+            <img src="https://via.placeholder.com/300" alt="Snacks" />
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section id="instagram">
+        <h2>Follow Us on Instagram</h2>
+        <p>@mr_chaawala</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Mr. Chai Wala. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
